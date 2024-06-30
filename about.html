@@ -26,6 +26,16 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+    <style>
+        #bg-video {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
+
+    </style>
     <!-- ? Preloader Start -->
     <div id="preloader-active">
         <div class="preloader d-flex align-items-center justify-content-center">
@@ -82,7 +92,11 @@
     </header>
     <main>
         <!--? Hero Start -->
-        <div class="slider-area2 section-bg2 hero-overly" data-background="assets/img/hero/hero2.png">
+        <div class="slider-area2 section-bg2 hero-overly">
+            <video autoplay muted loop id="bg-video" class="slider-height2">
+                <source src="assets/img/gallery/y2mate.com - Laundry Video for Web Background_1080p.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
             <div class="slider-height2 d-flex align-items-center">
                 <div class="container">
                     <div class="row">
@@ -95,6 +109,7 @@
                 </div>
             </div>
         </div>
+        
         <!-- Hero End -->
         <!--? About Area  -->
         <section class="about-area2 section-padding40">
@@ -371,11 +386,6 @@
         <div class="footer-border">
            <div class="row d-flex align-items-center">
                <div class="col-xl-12 ">
-                   <div class="footer-copy-right text-center">
-                       <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                          Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-                          <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-                      </div>
                   </div>
               </div>
           </div>

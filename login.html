@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="./assets/css/loginstyle.css">
+
+</head>
+<body>
+<div class="login-form">
+    <h2>Login</h2>
+    <form onsubmit="sweetalert(event)">
+        <div class="logo">
+            <img src="assets/img/logo/logo.png" alt="Logo Amba Laundry">
+        </div>
+        <div class="input-container">
+            <i class="fas fa-user icon"></i>
+            <input type="text" id="username" name="username" placeholder="Username" required>
+        </div>
+        <div class="input-container">
+            <i class="fas fa-lock icon"></i>
+            <input type="password" id="password" name="password" placeholder="Password" required>
+        </div>
+        <button type="submit">Login</button>
+        <p id="waktu"></p>
+    </form>
+</div>
+</body>
+<script>
+    function sweetalert(event) {
+        event.preventDefault();
+        Swal.fire({
+            title: 'Halooo',
+            text: 'Selamat datang di halaman beranda Amba Laundry!',
+            icon: 'info',
+            confirmButtonText: 'OK'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                // Redirect to the home page
+                window.location.href = "index.html"; // Ganti dengan URL halaman beranda Anda
+            }
+        });
+    }
+</script>   
+
+<script src="./script/main.js"></script>
+</body>
+</html>

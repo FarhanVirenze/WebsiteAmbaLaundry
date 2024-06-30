@@ -1,0 +1,34 @@
+.text-center {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Mempercantik font menggunakan Arial */
+    font-size: 0px;
+    margin-top: 10px;
+}
+
+.services-area table {
+    width: 80%; /* Sesuaikan lebar tabel sesuai kebutuhan */
+    margin: 0 auto; /* Membuat tabel berada di tengah halaman */
+    border-collapse: collapse; /* Menggabungkan border sel pada tabel */
+    background-color: #e0e9f4; /* Warna latar belakang tabel */
+    border-radius: 8px; /* Membuat sudut bulat pada tabel */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Efek bayangan untuk memberi kedalaman */
+}
+
+.services-area th,
+.services-area td {
+    border: 1px solid #e31616; /* Warna border antar sel */
+    padding: 8px; /* Jarak antara teks dengan tepi sel */
+    text-align: center; /* Posisi teks di tengah-tengah sel */
+}
+
+.services-area th {
+    background-color: #6eff4e; /* Warna latar belakang header kolom */
+    color: rgb(184, 41, 41); /* Warna teks pada header kolom */
+}
+
+.services-area td:first-child {
+    text-align: left; /* Posisi teks di kiri pada sel pertama di setiap baris */
+}
+
+
+
